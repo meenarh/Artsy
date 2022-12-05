@@ -1,38 +1,67 @@
-@import url('https://fonts.cdnfonts.com/css/clash-display');
-@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/bellefair');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.App {
-  text-align: center;
+/* Home */
+/* .home{
+  /* overflow: hidden; */
+
+.images img {
+  padding: 5px;
+  width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profiles {
+  display: inline-flex;
+  flex-direction: row-reverse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile {
+  display: block;
+  border: 1px solid #78A3AD;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.events{
+  padding: 6%;
+  background: linear-gradient(99.99deg, #4693ED -26.21%, #79C2D2 22.16%, rgba(192, 86, 9, 0.49) 111.62%);
+}
+
+.event-info{
+  background-image: url(../src/assets/images/homepage/b-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text{
+  position: absolute;
+  margin-top: 30%;
+  padding-left: 5%;
+}
+
+.text-2{
+  margin-top: 40%;
+  color: #FFFFFF;
+  padding-left: 3%;
+}
+
+.link-text{
+  justify-content: right;
+}
+
+.btn{
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  height: 50px;  
+  width: 150px;
 }
 
 @keyframes App-logo-spin {

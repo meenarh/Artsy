@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         "black": "#292929"
       },
+      fontFamily: {
+        'serif': 'Bellefair, sans-serif',
+    },
     },
   },
   plugins: [],

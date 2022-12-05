@@ -1,13 +1,17 @@
-// import { BrowserRouter, Route, Router } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-// import Auction from "./pages/Auction";
-// import Drop from "./pages/Drop";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 // import Market from "./pages/Market";
 
 function App() {
   return (
+    // <Router>
+    //   <Routes>
+    //     <Route exact path="/" element={<Home />} />
+    //   </Routes>
+    // </Router>
+
     <div>
       <Home />
     </div>
