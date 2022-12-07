@@ -12,7 +12,9 @@ import profile2 from "../assets/images/homepage/profile2.png";
 import profile3 from "../assets/images/homepage/profile3.png";
 import profile4 from "../assets/images/homepage/profile4.png";
 import profile5 from "../assets/images/homepage/profile5.png";
-// import model from "../assets/images/homepage/model.png";
+import model from "../assets/images/homepage/model.png";
+import { RxEnvelopeClosed } from "react-icons/rx";
+import { MdOutlineLocationOn } from "react-icons/md";
 import { CgArrowRight } from "react-icons/cg";
 
 const Home = () => {
@@ -303,7 +305,7 @@ const Home = () => {
       <section className="bg-grey p-10 picture">
         <h2 className="text-5xl font-extrabold">TOP CREATORS OF THE WEEK</h2>
         <div className="model">
-
+          <img className="model-img" src={model} alt="model" />
           <div class="progress bar mt-6">
             <div class="color"></div>
           </div>
@@ -314,7 +316,7 @@ const Home = () => {
             <li>Lifestyle</li>
             <li>Blueprint</li>
           </ul>
-          
+
           <p className="mt-16 pt-16 text-4xl text-black">
             “Everything always looked better in black and white. Everything
             always as if it were the first time; there’s always more people in a
@@ -328,6 +330,61 @@ const Home = () => {
         </div>
       </section>
       {/* end of section */}
+
+      {/* Newsetter */}
+      <section
+        className="newsletter text-center mt-16 pt-16 ml-16 pb-14 mb-16"
+        style={{ border: "1px solid #333333", width: "90%" }}
+      >
+        <div className="flex flex-col">
+          <h3 className="text-5xl">Newsletter</h3>
+          <h5 className="text-3xl pt-6">
+            Subscribe to get daily updates on new drops & exciting deals
+          </h5>
+          <input
+            className="uppercase"
+            type="email"
+            placeholder="Enter your email"
+          />
+        </div>
+      </section>
+      {/* End of Newsletter */}
+
+      {/* Footer */}
+      <footer className="footer flex m-16">
+        <div className="flex">
+          <h1 className="logo font-bold text-8xl text-black uppercase p-10">
+            Artsy.
+          </h1>
+          <div className="flex">
+            <div className="">
+              <ul className="list-item text-3xl">
+                <li>Home</li>
+                <li>Marketplace</li>
+                <li>Auctions</li>
+                <li>Drops</li>
+              </ul>
+            </div>
+            <div className="pl-10 ml-10">
+              <ul className="flex-col list-item text-3xl">
+                <li>Blog</li>
+                <li>Wallets</li>
+                <li>Rates</li>
+                <li>Highbids</li>
+              </ul>
+            </div>
+            <div className="">
+              <ul className="list-item text-3xl">
+                <li className="flex-row">
+                  <RxEnvelopeClosed /> artsystudios@gmail.com
+                </li>
+                <li className="flex-row"><MdOutlineLocationOn /> Lagos,Nigeria</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* End of Footer */}
     </div>
   );
 };
