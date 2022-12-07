@@ -12,6 +12,7 @@ import profile2 from "../assets/images/homepage/profile2.png";
 import profile3 from "../assets/images/homepage/profile3.png";
 import profile4 from "../assets/images/homepage/profile4.png";
 import profile5 from "../assets/images/homepage/profile5.png";
+// import model from "../assets/images/homepage/model.png";
 import { CgArrowRight } from "react-icons/cg";
 
 const Home = () => {
@@ -246,11 +247,87 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* progress bar */}
-        <div className="bar">
-          
-        </div>
+
+        <section className="flex-row">
+          {/* bar */}
+          <div class="progress mt-6">
+            <div class="color"></div>
+          </div>
+
+          {/* nav buttons */}
+          <div className="flex nav-btns justify-end">
+            <button
+              className="btn text-sm"
+              style={{ borderRadius: "50%", width: "50px" }}
+            >
+              &#60;
+            </button>
+            <button
+              className="btn text-sm"
+              style={{ borderRadius: "50%", width: "50px" }}
+            >
+              &#62;
+            </button>
+          </div>
+        </section>
       </div>
+      {/* End of events */}
+
+      {/* Links */}
+      <section className="links mt-16 pt-16 pb-16 mb-16">
+        <hr style={{ border: "0.5px solid #333333" }} />
+
+        <div className="flex p-10">
+          <h2 className="text-4xl">Export Marketplace</h2>
+          <CgArrowRight
+            className="text-6xl link-arrow"
+            style={{ color: " #4693ED" }}
+          />
+        </div>
+
+        <hr style={{ border: "0.5px solid #333333" }} />
+
+        <div className="flex p-10">
+          <h2 className="text-4xl">See Auctions</h2>
+          <CgArrowRight
+            className="text-6xl link-arrow-2 text-end"
+            style={{ color: " #4693ED" }}
+          />
+        </div>
+        <hr style={{ border: "0.5px solid #333333" }} />
+      </section>
+
+      {/* End of links */}
+
+      {/* Anothwr section */}
+      <section className="bg-grey p-10 picture">
+        <h2 className="text-5xl font-extrabold">TOP CREATORS OF THE WEEK</h2>
+        <div className="model">
+
+          <div class="progress bar mt-6">
+            <div class="color"></div>
+          </div>
+
+          <ul className="text-black list-item text-5xl">
+            <li>Editorials</li>
+            <li>Fashion</li>
+            <li>Lifestyle</li>
+            <li>Blueprint</li>
+          </ul>
+          
+          <p className="mt-16 pt-16 text-4xl text-black">
+            “Everything always looked better in black and white. Everything
+            always as if it were the first time; there’s always more people in a
+            black and white photograph. It just makes it seem that there were
+            more people at a gig, more people at a football match, than with
+            colour photography. Everything looks more exciting.”– Jack Lowden
+          </p>
+          <p className="text-8xl num font-extrabold text-center mt-16 pt-16 ml-16 pl-8 text-black">
+            1985
+          </p>
+        </div>
+      </section>
+      {/* end of section */}
     </div>
   );
 };
