@@ -7,7 +7,9 @@ module.exports = {
     extend: {
       colors: {
         "black": "#292929",
-        "grey": "#E2E2E2"
+        "grey": "#E2E2E2",
+        "white": "#FFFFFF",
+        "gray": "#333333"
       },
       fontFamily: {
         'serif': 'Bellefair, sans-serif',
